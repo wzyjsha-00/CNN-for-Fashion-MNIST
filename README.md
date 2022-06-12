@@ -22,8 +22,8 @@ torch 1.7.1
 ##  Working Record
 |        State        |Networks|Train Epochs / Time|Best Test Acc|Model Param|Loss Curve|
 |:-------------------:|:------:|:-----------------:|:-----------:|:---------:|:--------:|
-|&#9745; 09 June, 2022|[LeNet](model/LeNet.py)|30 / 18min-29s|0.9016|[LeNet-best.pth.tar](model/LeNet5_Pretraind/best.pth.tar)|[LeNet-Loss Curve](model/LeNet5_Pretraind/Loss Curve_LeNet_20220612.png)|
-|&#9745; 11 June, 2022|[AlexNet](model/AlexNet.py)|30 / 35min-39s|0.9219|[AlexNet-best.pth.tar](model/AlexNet_Pretrained/best.pth.tar)|[AlexNet-Loss Curve](model/AlexNet_Pretrained/Loss Curve_AlexNet_20220612.png)|
+|&#9745; 09 June, 2022|[LeNet](model/LeNet.py)|30 / 18min-29s|0.9016|[LeNet-best.pth.tar](model/LeNet5_Pretraind/best.pth.tar)|[LeNet-Loss Curve](model/Loss Curves/Loss Curve_LeNet_20220612.png)|
+|&#9745; 11 June, 2022|[AlexNet](model/AlexNet.py)|30 / 35min-39s|0.9219|[AlexNet-best.pth.tar](model/AlexNet_Pretrained/best.pth.tar)|[AlexNet-Loss Curve](model/Loss Curves/Loss Curve_AlexNet_20220612.png)|
 |&#9744;              |[VGGNet]()||
 |&#9744;              |[InceptionNet]()||
 |&#9744;              |[ResNet]()||
