@@ -9,6 +9,7 @@ from config.path import *
 from config.torch_package import *
 from resources import utils
 from model.LeNet import LeNet5
+from model.AlexNet import AlexNetLight
 from model.data_loader import fetch_dataloader
 from resources.draw_functions import draw_loss_curve
 
@@ -119,6 +120,7 @@ if __name__ == '__main__':
     logging.info("-- Done.")
 
     net = LeNet5().to(device)
+    # net = AlexNetLight().to(device)
 
     criterion = nn.CrossEntropyLoss()
     optimizer_ft = optim.SGD(net.parameters(), lr=learning_rate, momentum=momentum, weight_decay=weight_decay)
