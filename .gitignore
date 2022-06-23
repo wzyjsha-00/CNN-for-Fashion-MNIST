@@ -2,12 +2,10 @@
 __pycache__/
 
 config/__pycache__/
-data/
 model/__pycache__/
-model/ResNet_Pretrained/best.pth.tar
-model/ResNet_Pretrained/last.pth.tar
-model/InceptionNet_Pretrained/best.pth.tar
-model/InceptionNet_Pretrained/last.pth.tar
 
-02 建模与实验分析-回归.ipynb
-Dataset_and_DataLoader.ipynb
+model/LeNet5_Pretrained
+model/AlexNet_Pretrained
+model/VGGNet_Pretrained
+model/InceptionNet_Pretrained
+model/ResNet_Pretrained
