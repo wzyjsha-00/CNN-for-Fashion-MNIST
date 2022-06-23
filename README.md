@@ -10,26 +10,41 @@ Please feel free to ask anything!
 - [**ResNet**](model/ResNet.py), [*Paper Link*](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)
 
 ## Baseline Environment and Setup
-```buildoutcfg
+```python  
 python 3.9.11
 cuda 11.0.3
 cudnn 8.0.5 
 torch 1.7.1
 ```
-- **Install pytorch:** ```pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html```
+- **Install pytorch:**  ```pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html```
 - **Install dependencies:** ```pip install -r requirements.txt```
-- **Download Data:** get [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) then put into the above folder
-- **Check** the [hyper parameter](config/hyper_param.py)
+- **Download** the [Fashion-MNIST](https://1drv.ms/u/s!AjRAq1taDd8ygo19T6XNf6S5T9HT5Q) then put the unzipped file into the [data](data) folder
+- **Download** the **best.pth.tar** from corresponding pre-trained model parameter folder (seeing the table in **Working Record**) and put the **best.pth.tar** file into the [model](model) folder
+- **Choose** the model you need in Line125-129 of [train.py ](train.py) and **Check** the [hyper parameters](config/hyper_param.py)
+
+## Project Structure
+```buildoutcfg
+.
+|-- config/             
+|-- data/
+|-- model/
+|-- resources/
+|-- train.py
+|-- requirements.txt
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+```
 
 
 ##  Working Record
 |        State        |Network|Train Epochs / Time|Best Test Acc|Model Param|
 |:-------------------:|:-----:|:-----------------:|:-----------:|:---------:|
-|&#9745; 09 June, 2022|[LeNet](model/LeNet.py)|30 / 18m-29s|0.9016|[LeNet-best.pth.tar](model/LeNet5_Pretrained/best.pth.tar)|
-|&#9745; 11 June, 2022|[AlexNet<sup>1](model/AlexNet.py)|30 / 35m-39s|0.9219|[AlexNet-best.pth.tar](model/AlexNet_Pretrained/best.pth.tar)|
-|&#9745; 13 June, 2022|[VGGNet<sup>2](model/VGGNet.py)|30 / 30m-35s |0.9135|[VGGNet-best.pth.tar](model/VGGNet_Pretrained/best.pth.tar)|
-|&#9745; 22 June, 2022|[InceptionNet](model/InceptionNet.py)|30 / 416m-54s|0.9274|[InceptionNet-best.pth.tar](model/InceptionNet_Pretrained/best.pth.tar)|
-|&#9745; 16 June, 2022|[ResNet](model/ResNet.py)|30 / 82m-24s|0.9340|[ResNet-best.pth.tar](model/ResNet_Pretrained/best.pth.tar)|
+|&#9745; 09 June, 2022|[LeNet](model/LeNet.py)|30 / 18m-29s|0.9016|[LeNet-best.pth.tar](https://1drv.ms/u/s!AjRAq1taDd8ygoxyiPfXntiHJUpnyg?e=RmTujU)|
+|&#9745; 11 June, 2022|[AlexNet<sup>1](model/AlexNet.py)|30 / 35m-39s|0.9219|[AlexNet-best.pth.tar](https://1drv.ms/u/s!AjRAq1taDd8ygox8xU7DnBkF8dsvjA?e=slHcKS)|
+|&#9745; 13 June, 2022|[VGGNet<sup>2](model/VGGNet.py)|30 / 30m-35s |0.9135|[VGGNet-best.pth.tar](https://1drv.ms/u/s!AjRAq1taDd8ygo0AGbjJNEZyfuNnMQ?e=O7AOi9)|
+|&#9745; 22 June, 2022|[InceptionNet](model/InceptionNet.py)|30 / 416m-54s|0.9274|[InceptionNet-best.pth.tar](https://1drv.ms/u/s!AjRAq1taDd8ygo120M9sOh9bJtrwQg?e=kewwJ7)|
+|&#9745; 16 June, 2022|[ResNet](model/ResNet.py)|30 / 82m-24s|0.9340|[ResNet-best.pth.tar](https://1drv.ms/u/s!AjRAq1taDd8ygox-sWyCXUrfu-bCOg?e=gchZpE)|
 ### Notes
 - Device on **GPU:** NVIDIA GeForce GTX 1070, **CPU:** Intel i7-7700K, **RAM:** 32GB and Win10 **System**.
 - Training loss curves can be seen in [**Loss Curves**](model/Loss_Curves) folder.
